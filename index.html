@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">03 mai ....</span>
+              <div class="blog-slider__title">Elvin happy birth day</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+              <a href="#" class="blog-slider__button">Voir plus</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 Avril ....</span>
+              <div class="blog-slider__title">Jocelin birth day</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">Voir plus</a>
+            </div>
+          </div>
+          
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">28 Février ....</span>
+              <div class="blog-slider__title">Dorcas birth day</div>
+              <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+              <a href="#" class="blog-slider__button">Voir plus</a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="blog-slider__pagination"></div>
+        
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.blog-slider', {
+            spaceBetween: 30,
+            effect: 'fade',
+            loop: true,
+            mousewheel: {
+              invert: false,
+            },
+            // autoHeight: true,
+            pagination: {
+              el: '.blog-slider__pagination',
+              clickable: true,
+            }
+          });
+    </script>
+</body>
+</html>
